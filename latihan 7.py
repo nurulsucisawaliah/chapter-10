@@ -9,15 +9,15 @@ isi = []
 
 for m in baca_list :
     if (m == ' ') :
-        d = ord(m)
+        x = ord(m)
     else :
-        a = ord(m)
-        d = a - n
+        i = ord(m)
+        x = i - n
         if (d < 65) :
-            d = d + 26
-        elif (90 < d and d <97) :
-            d = d + 26
-    kars = chr(d)
+            d = x + 26
+        elif (90 < x and x <97) :
+            x = x + 26
+    kars = chr(x)
     isi.append(kars)
 joined = ','.join(isi)
 
